@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro de produtos</title>
+  </head>
+  <body>
+    <h1>Dados do cadastro</h1>
+
+    <form method="post" action="tabelaprodutos.html">
+
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" placeholder="Nome do produto">
+
+      <br><br>
+
+      <label for="peso">Peso do Produto:</label>
+      <input type="text" name="peso" id="endereco" placeholder="Peso do produto">
+
+      <br><br>
+
+      <label for="valor">Valor do Produto:</label>
+      <input type="text" name="valor" id="endereco" placeholder="Valor do produto">
+
+      <br><br>
+
+
+      <label for="estoqueini">Estoque Inicial</label>
+      <input type="text" name="estoqueini" id="estoqueini">
+      <br><br>
+
+      <br>
+      <label>Mercado</label>
+      <br>
+
+      <input type="radio" id="interno" name="Mercado" value="I">
+      <label for="interno">Mercado Interno</label>
+      <br><br>
+
+      <input type="radio" id="externo " name="mercado" value="M">
+      <label for="externo">Mercado Externo</label>
+      <br>
+      <br>
+
+      <select name="Fornecedor">
+          <option value="fornecedor1">Fornecedor 1</option> 
+          <option value="fornecedor2" >Fornecedor 2</option>
+          <option value="fornecedor3">Fornecedor 3</option>
+      </select>
+     
+      <br>  
+      <br>
+
+      <input type="submit" value="Enviar">
+      <br><br>
+      
+    <a href="paginaprincipal.html">Voltar</a>
+
+  </body>
+</html>

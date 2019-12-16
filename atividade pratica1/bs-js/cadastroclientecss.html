@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+
+      
+    <title>Cadastro de Clientes</title>
+
+
+
+    
+
+      <link rel="stylesheet" type="text/css" href="main.css" media="screen"/>
+
+      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+      <script src="js/jquery-3.4.1.min.js" type="text/javacript"></script>    
+      <script src="js/jquery.mask.min.js" type="text/javacript"></script>
+      <script scr="js/bootstrap.min.js" type="text/javacript"></script>
+      <script src="js/jquery.validate.js" type="text/javacript"></script>
+      <script src="js/additional-methods.min.js" type="text/javacript"></script>
+      <script src="js/localization/messagens_pt_br.js" type="text/javacript"></script>
+      
+
+       <script type="text/javascript">
+
+         $(document).ready(function(){
+
+          
+            $("#formulario").validate({
+              rules:{
+                nome: {
+                  required: true,
+                  maxlength: 100,
+                  minlength: 10,
+                  minWords: 2
+                },
+              }
+
+                 
+
+            /*$("#CPF").blur(function (){
+            if($("#CPF").val() == '') {           
+              $("#saida").html("Informe um CPF");         
+              return false;   
+            }    
+            if(validarCPF($("#CPF").val())) {         
+              $(".CPF").css('border-color','limegreen');     
+            } 
+            else {            
+              $(".CPF").css('border-color','red');     
+            } 
+          });
+            })
+
+          $("#CPF").mask("000.000.000-00")
+          $("#telefone").mask("(00) 0000-0000")
+          $("#salario").mask("999.999.990,00", {reverse: true})
+          $("#cep").mask("00.000-000")
+        */
+          
+
+          }) 
+        }) 
+
+           
+       </script>
+
+  </head>
+  <body>
+    <div class="container" id="titulo"> 
+        <p class="text-center font-weight-bold">Cadastro de Clientes</p>
+
+      </div>
+        <div>
+          <ul class="menu"> 
+            <li><a href="index.html">Home</a></li>  
+             <li><a href="">Produto</a>   
+              <ul class="submenu-1"> 
+               <li><a href="cadastroprodcss.html">Cadastrar Produto</a></li>           
+                <li><a href="tabelaprodcss.html">Listar Produtos</a></li> </ul>
+              
+              
+           
+            
+             <li><a href="#">Cliente</a>   
+              <ul class="submenu-1">      
+               <li><a href="cadastroclientecss.html">Cadastrar Cliente </a></li>           
+                <li><a href="tabelaclientecss.html">Listar Clientes</a></li> </ul>
+              
+          </li>    
+             
+          
+      </div>
+      <br><br>
+
+        <title>Cadastro de Clientes</title>
+        <link rel="stylesheet" type="text/css" href="main.css" media="screen"/>
+      </head>
+      <body>
+        <br>
+        
+        <div id="area">
+          <br><br><br><br>
+
+        <form name="cadastrocliente" method="post"  id="formulario">
+          <h2>Dados do Cliente</h2>
+          
+          <div class="row">
+            <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome"   class="form-control">
+        </div>
+
+          
+          <br>
+        <div class="row">
+          <label for="CPF">CPF:</label>
+          <input type="text" name="CPF" id="CPF" class="form-control" >
+         </div> 
+          
+          <br>
+        <div class="row">
+            <label for="">Telefone:</label>
+          <input type="tel" name="tel" id="tel" class="form-control">
+        </div>  
+         
+          <br>
+        <h2>Endereço</h2>
+        <div class="row">
+          <label for="">Rua:</label>
+          <input type="text" name="rua" id="rua" class="form-control">
+        </div>
+         
+          <br>
+
+        <div class="row">
+          <label for="numero">Numero</label>
+          <input type="text" name="numero" id="numero" class="form-control">
+        </div>  
+
+         
+          <br>
+        <div class="row">  
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro" class="form-control"> 
+        </div>  
+          <br>
+        
+            <label for="">Cidade:</label>
+          <input type="text" name="cidade" id="cidade" class="form-control">
+        
+          <br>
+        
+         
+            <label for="">CEP:</label>
+          <input type="text" name="cep" id="cep" class="form-control">
+         
+
+          
+          <br>
+
+         
+          <label for="">Estado:</label>
+          <input type="text" name="estado" id="estado" class="form-control">
+        
+
+          <br><br>
+
+          
+
+         
+         
+          <br>  
+          <br>
+
+          <input type="submit" value="Enviar">
+          <br>
+        <a href="index.html">Voltar</a></form></div></div>
+
+  </body>
+</html>

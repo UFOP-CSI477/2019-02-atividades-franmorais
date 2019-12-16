@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Cadastro de produtos</title>
+    
+
+      <link rel="stylesheet" type="text/css" href="main.css" media="screen"/>
+
+      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+      <script src="js/jquery-3.4.1.min.js" type="text/javacript"></script>    
+      <script src="js/jquery.mask.min.js" type="text/javacript"></script>
+      <script scr="js/bootstrap.min.js" type="text/javacript"></script>
+      <script src="js/jquery.validate.js" type="text/javacript"></script>
+      <script src="js/additional-methods.min.js" type="text/javacript"></script>
+      <script src="js/localization/messagens_pt_br.js" type="text/javacript"></script>
+
+
+      <script type="text/javascript">
+
+         $(document).ready(function(){
+
+          
+            $("#formulario").validate({
+              rules:{
+                nome: {
+                  required: true,
+                  maxlength: 100,
+                  minlength: 10,
+                  minWords: 2
+                  },
+                }
+              }
+            )}
+            )
+
+         </script>     
+  
+
+
+    
+  </head>
+  <body>
+<div id="titulo"> 
+    <p class="text-center font-weight-bold">Cadastro de Produtos</p>
+
+  </div>
+    <div>
+      <ul class="menu"> 
+        <li><a href="index.html">Home</a></li>  
+         <li><a href="">Produto</a>   
+          <ul class="submenu-1"> 
+           <li><a href="cadastroprodcss.html">Cadastrar Produto</a></li>           
+            <li><a href="tabelaprodcss.html">Listar Produtos</a></li> </ul>
+          
+          
+       
+        
+         <li><a href="#">Cliente</a>   
+          <ul class="submenu-1">      
+           <li><a href="cadastroclientecss.html">Cadastrar Cliente </a></li>           
+            <li><a href="tabelaclientecss.html">Listar Clientes</a></li> </ul>
+          
+      </li>    
+         
+      
+  </div>
+  <br><br>
+
+  <div id="area">
+    
+
+
+    <form method="post" name="cadastroprod" id="formulario">
+      
+        <legend>Cadastro </legend>
+ 
+
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" placeholder="Nome do produto">
+
+      <br><br>
+
+      <label for="peso">Peso do Produto:</label>
+      <input type="text" name="peso" id="endereco" placeholder="Peso do produto">
+
+      <br><br>
+
+      <label for="valor">Valor do Produto:</label>
+      <input type="text" name="valor" id="endereco" placeholder="Valor do produto">
+
+      <br><br>
+
+
+      <label for="estoqueini">Estoque Inicial</label>
+      <input type="text" name="estoqueini" id="estoqueini">
+      <br><br>
+
+      <br>
+      <label>Mercado</label>
+      <br>
+
+      <input type="radio" id="interno" name="Mercado" value="I">
+      <label for="interno">Mercado Interno</label>
+      <br><br>
+
+      <input type="radio" id="externo " name="mercado" value="M">
+      <label for="externo">Mercado Externo</label>
+      <br>
+      <br>
+
+      <select name="Fornecedor">
+          <option value="fornecedor1">Fornecedor 1</option> 
+          <option value="fornecedor2" >Fornecedor 2</option>
+          <option value="fornecedor3">Fornecedor 3</option>
+      </select>
+     
+      <br>  
+      <br>
+
+      <input type="submit" value="Enviar">
+      <br><br>
+      
+    <a href="index.html">Voltar</a></form></div>
+
+     
+
+  </body>
+</html>
